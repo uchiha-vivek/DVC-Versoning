@@ -10,6 +10,8 @@ data = {
 df = pd.DataFrame(data)
 
 
+new_student = {"student":"suman","branch":'ece'}
+df.loc[len(df.index)] = new_student
 data_directory='data'
 os.makedirs(data_directory,exist_ok=True)
 file_path = os.path.join(data_directory,'sample_data.csv')
